@@ -4,7 +4,7 @@ import axios from 'axios'
 export default apiService 
 
 axios.defaults.baseURL = 'https://pixabay.com/api/'
-const API_KEY = '27676465-10935f70b5ef43945c3ec7b05'
+const API_KEY = '29185882-2e6657626f951957c100977da'
 
 async function apiService(query, page, perPage) {
  // try {}
