@@ -1,27 +1,22 @@
+import axios from 'axios';
 
-
-import axios from 'axios'
-export default apiService 
-
-axios.defaults.baseURL = 'https://pixabay.com/api/'
-const API_KEY = '29185882-2e6657626f951957c100977da'
 export default class ServiceAPI {
   constructor() {
     this.options = {
       params: {
-        key: '29185882-2e6657626f951957c100977da',
+        key: '25182566-6d97045846fa1b6cae2a84492',
         q: '',
         image_type: 'photo',
         orientation: 'horizontal',
         safesearch: true,
         page: 1,
-        per_page: 40,
+        per_page: 39,
       },
     };
   }
 
   async getPictures() {
-    const response = await axios.get(axios.defaults.baseURL, this.options);
+    const response = await axios.get('https://pixabay.com/api/', this.options);
     this.incrementPage();
     return response;
   }

@@ -1,36 +1,32 @@
 {
-  "name": "js_hometask_11",
-  "version": "2.0.0",
-  "description": "",
-  "homepage": "https://github.com/iljakeld/goit-js-hw-11",
+  "name": "goit-js-hw-11",
+  "version": "1.0.0",
+  "description": "Home Work 11",
+  "main": "index.js",
+  "homepage": "https://ilja.keld.github.com/goit-js-hw-11",
   "scripts": {
-    "start": "parcel src/*.html",
+    "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iljakeld/goit-js-hw-11.git"
+    "url": "git+https://github.com/ilja.keld/goit-js-hw-11.git"
   },
-  "keywords": [],
   "author": "Ilja Keldanovics <ilja.keld@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iljakeld/goit-js-hw-11/issues"
-  },
-  "dependencies": {
-    "axios": "^0.27.2",
-    "modern-normalize": "^1.1.0",
-    "notiflix": "^3.2.5",
-    "sass": "^1.52.1",
-    "simplelightbox": "^2.10.3"
+    "url": "https://github.com/ilja.keld/goit-js-hw-11/issues"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "buffer": "^6.0.3",
-    "parcel": "^2.5.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4",
-    "process": "^0.11.10"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "dependencies": {
+    "axios": "^0.24.0",
+    "notiflix": "^3.2.2",
+    "simplelightbox": "^2.10.1"
+  }
 }
